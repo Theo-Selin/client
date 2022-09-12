@@ -19,12 +19,14 @@ This step is situational, but I'll try to be as thorough as possible. APIs can d
 This specific boilerplate is based on an API from wordpress.com, which is a public API, but many uses wordpress locally on their computer which information looks different.
 
 ##### Connect with wordpress.com
-If you want to use your wordpress.com account, all you have to do is change the name inside the .env file:
-![image](https://user-images.githubusercontent.com/90902429/189615302-fa13aaae-8872-4cdc-ba10-41801d652bb0.png)
-In this case, my account name is "theoselin". All you do is change this name to your own and you're ready to go.
+If you want to use your wordpress.com account, all you have to do is:
+1. Create a .env file in the "client" directory
+2. Add this line: REACT_APP_POST_API=https://public-api.wordpress.com/rest/v1.1/sites/NAME.wordpress.com/
+3. Change NAME to your own account name.
+After this is done you should be ready to go!
 
 ##### Connect locally
-If you want to use your locally installed wordpress, there are some more things you need to change and to keep an eye out for. First of all, you need to change the whole link in the .env file to: http://localhost/wp-json/wp/v2/posts where "localhost" differs depending on your port. Some need to use localhost:8888 for example, so make sure that's correct first. Second of all let's look at the two different structures for the data:
+If you want to use your locally installed wordpress, there are more things you need to change and keep an eye out for. First of all you need to change the whole link in the .env file to: http://localhost/wp-json/wp/v2/posts where "localhost" differs depending on your port. Some need to use localhost:8888 for example, so make sure that's correct first. Second of all let's look at the two different structures for the data:
 
 ###### wordpress.com
 ![image](https://user-images.githubusercontent.com/90902429/189616314-39840e5c-0c03-4b15-8db3-d78796b2bf74.png)
@@ -35,4 +37,8 @@ This API returns an object with "posts" as an array. This means that when we fet
 ![image](https://user-images.githubusercontent.com/90902429/189618698-7f4d5bd4-4f7f-4543-ad53-ffc9b4d43a40.png)
 This API returns an array with three objects inside of it, so in this case, we don't need to specify what data to set the state as, we simply set all the data as our posts state:
 ![image](https://user-images.githubusercontent.com/90902429/189619320-ea93d7f7-fc9f-4a33-824e-584b31cd7851.png)
-We also need to collect this data differently since the structure differs from what's there originally so with this specific boilerplate I strongly recommend using wordpress.com.
+We also need to render this data differently since the structure differs from what's there originally so with this specific boilerplate I strongly recommend using wordpress.com.
+
+### Deployment
+You can find a live demo of this project here: https://cms-examination-client.vercel.app/
+I've used vercel to deploy my frontend
