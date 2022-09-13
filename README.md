@@ -40,5 +40,13 @@ This API returns an array with three objects inside of it, so in this case, we d
 We also need to render this data differently since the structure differs from what's there originally so with this specific boilerplate I strongly recommend using wordpress.com.
 
 ### Deployment
-You can find a live demo of this project here: https://cms-examination-client.vercel.app/
-I've used vercel to deploy my frontend
+You can find a live demo of this project here: [https://cms-examination-client.vercel.app/](https://cms-examination-client.vercel.app/) I've used Vercel for my live deployment but you can use any service you like. I prefer Vercel since it's easy to setup. All you have to do to deploy you own application is following:
+1. Add new project <br />
+![image](https://user-images.githubusercontent.com/90902429/189832054-f30a3259-1feb-4078-8809-841ecb38939f.png)
+
+2. Import repository <br />
+![image](https://user-images.githubusercontent.com/90902429/189832467-f3bbe5c5-6dba-44fa-bbd9-8834e6e633cd.png)
+
+3. Add your .env info <br />
+![image](https://user-images.githubusercontent.com/90902429/189832655-0d229c2c-2e7a-4ae0-b687-d276bc5770ec.png)
+The reason why you manually have to add your .env variables are because it's often sensitive information you don't want to push to your GitHub for everyone to see. In this boilerplate, your .env file is included in the .gitignore file, so you can't find it in your repository. This way you'll still be able to use it's information in your deployed live demo.
