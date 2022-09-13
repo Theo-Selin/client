@@ -22,7 +22,7 @@ This specific boilerplate is based on an API from wordpress.com, which is a publ
 If you want to use your wordpress.com account, all you have to do is:
 1. Create a .env file in the "client" directory
 2. Add this line: REACT_APP_POST_API=https://public-api.wordpress.com/rest/v1.1/sites/NAME.wordpress.com/
-3. Change NAME to your own account name.
+3. Change NAME to your wordpress site name.
 After this is done you should be ready to go!
 
 ##### Connect locally
@@ -37,7 +37,7 @@ This API returns an object with "posts" as an array. This means that when we fet
 ![image](https://user-images.githubusercontent.com/90902429/189618698-7f4d5bd4-4f7f-4543-ad53-ffc9b4d43a40.png)
 This API returns an array with three objects inside of it, so in this case, we don't need to specify what data to set the state as, we simply set all the data as our posts state:
 ![image](https://user-images.githubusercontent.com/90902429/189619320-ea93d7f7-fc9f-4a33-824e-584b31cd7851.png)
-We also need to render this data differently since the structure differs from what's there originally so with this specific boilerplate I strongly recommend using wordpress.com.
+We also need to render this data differently since the structure differs from what's there originally so with this specific boilerplate I strongly recommend using wordpress.com unless you feel comfortable navigating and working with json.
 
 ### Deployment
 You can find a live demo of this project here: [https://cms-examination-client.vercel.app/](https://cms-examination-client.vercel.app/) I've used Vercel for my live deployment but you can use any service you like. I prefer Vercel since it's easy to setup. All you have to do to deploy you own application is following:
@@ -50,3 +50,8 @@ You can find a live demo of this project here: [https://cms-examination-client.v
 3. Add your .env info <br />
 ![image](https://user-images.githubusercontent.com/90902429/189832655-0d229c2c-2e7a-4ae0-b687-d276bc5770ec.png)
 The reason why you manually have to add your .env variables are because it's often sensitive information you don't want to push to your GitHub for everyone to see. In this boilerplate, your .env file is included in the .gitignore file, so you can't find it in your repository. This way you'll still be able to use it's information in your deployed live demo.
+
+#### How to update live deployment
+Vercel updates the live demo of your site every time you push something to the GitHub repository, so you can work as you normally do and the site will automatically update for pushes made to the main branch.
+
+### Keep calm and Keep coding!
