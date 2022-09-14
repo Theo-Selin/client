@@ -1,7 +1,7 @@
 # Getting started with the boilerplate
 
 ## What is this?
-This is a biolerplate for a CMS based blog. It uses React to render information published in Wordpress.
+This is a biolerplate for a CMS based blog. It uses React to render posts published in Wordpress.
 If you want to set this up for yourself, there are some changes that needs to be done in order to connect it
 to your own Wordpress.
 
@@ -26,7 +26,7 @@ If you want to use your wordpress.com account, all you have to do is:
 After this is done you should be ready to go!
 
 ##### Connect locally
-If you want to use your locally installed wordpress, there are more things you need to change and keep an eye out for. First of all you need to change the whole link in the .env file to: http://localhost/wp-json/wp/v2/posts where "localhost" differs depending on your port. Some need to use localhost:8888 for example, so make sure that's correct first. Second of all let's look at the two different structures for the data:
+If you want to use your locally installed wordpress, there are more things you need to change and keep an eye out for. First of all you need to have wordpress installed. If you don't, you can do it here: https://wordpress.org/support/article/how-to-install-wordpress/. Next you still need a .env file, but change the value to: http://localhost/wp-json/wp/v2/posts where "localhost" differs depending on your port. Some need to use localhost:8888 for example, so make sure that's correct first. Second of all let's look at the two different structures for the data:
 
 ###### wordpress.com
 ![image](https://user-images.githubusercontent.com/90902429/189616314-39840e5c-0c03-4b15-8db3-d78796b2bf74.png)
