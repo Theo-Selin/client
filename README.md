@@ -12,11 +12,11 @@ Use the link in the repository to clone it to your own system. This creates a co
 
 ##### 2. Run npm install
 In order for you to get everything neccessary for React to work properly, you need to run npm install in your terminal.
-This downloads and install a folder called node_modules, which are essential for React to work properly.
+This downloads and installs a folder called node_modules, which are essential for React to work properly.
 
 ##### 3. Connect your own API
 This step is situational, but I'll try to be as thorough as possible. APIs can differ in their structure, which makes every API unique.
-This specific boilerplate is based on an API from wordpress.com, which is a public API, but many uses wordpress locally on their computer which information looks different.
+This specific boilerplate is based on an API from wordpress.com, which is a public API, but many uses wordpress locally on their device which API information looks different so here are the two different ways to connect to wordpress:
 
 ##### Connect with wordpress.com
 If you want to use your wordpress.com account, all you have to do is:
