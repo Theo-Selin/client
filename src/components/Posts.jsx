@@ -16,6 +16,7 @@ const Posts = () => {
 
     useEffect(() => {
         fetchData()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
@@ -23,14 +24,13 @@ const Posts = () => {
             {posts.map((post) => (
                 <div className="post" key={post.id}>
                     <h1>{post.title}</h1>
-                    <section
+                    <div
                         dangerouslySetInnerHTML={{ __html: post.content }}
-                    ></section>
+                    ></div>
                 </div>
             ))}
         </>
     )
 }
-
 
 export default Posts
