@@ -55,6 +55,6 @@ The reason why you manually have to add your .env variables are because it's oft
 Vercel updates the live demo of your site every time you push something to the GitHub repository, so you can work as you normally do and the site will automatically update for pushes made to the main branch.
 
 ### Examination
-If you want to try posting something with the current connection, please provide your Wordpress username or email to theo.selin@hotmail.com and I'll give you access to the site.
+If you want to try posting something with the current connection, please provide your Wordpress username or email to theo.selin@hotmail.com and I'll give you access to the site. If you don't already have an account you will get a link that takes you to wordpress.com signup. Follow the instructions to create your site, and you'll be able to start creating posts.
 
 ### Keep calm and Keep coding!
