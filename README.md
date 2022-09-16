@@ -54,4 +54,7 @@ The reason why you manually have to add your .env variables are because it's oft
 #### How to update live deployment
 Vercel updates the live demo of your site every time you push something to the GitHub repository, so you can work as you normally do and the site will automatically update for pushes made to the main branch.
 
+### Examination
+If you want to try posting something with the current connection, please provide your Wordpress username or email to theo.selin@hotmail.com and I'll give you access to the site.
+
 ### Keep calm and Keep coding!
